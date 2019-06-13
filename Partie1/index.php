@@ -5,14 +5,8 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <?php
-        for($i = 1;$i<8;$i++){
-            ?>
-        <p><a href=<?='Exercice'.$i.'/index.sql'?>><?= 'Exercice '.$i?></a></p>
-        <?php
-        }
-        ?>
+
+        <p><a href= 'index.sql'>Index sql</a></p>
+
     </body>
 </html>
-
-
