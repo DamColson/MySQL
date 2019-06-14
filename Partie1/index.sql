@@ -52,6 +52,7 @@ SELECT * FROM `ide` WHERE `date`>='2010-01-01' AND `date`<='2011-12-31';
 DELETE FROM `languages` WHERE `language`='HTML';
 UPDATE `frameworks` SET `framework`='Symfony2' WHERE `framework`='Symfony';
 UPDATE `languages` SET `version`='5.1' WHERE `language`='JavaScript' && `version`='5';
-
+SELECT `languages`.`name`,`frameworks`.`name` FROM `languages` LEFT JOIN `frameworks` ON `languages`.`id` = `frameworks`.`languagesId`;
+SELECT `languages`.`name`,COUNT(`frameworks`.`name`) FROM `languages` LEFT JOIN `frameworks` ON `languages`.`id` = `frameworks`.`languagesId` GROUP BY `languages`.`name` HAVING COUNT(`frameworks`.`name`)>'3';
 
 
