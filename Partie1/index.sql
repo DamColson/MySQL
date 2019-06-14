@@ -45,4 +45,9 @@ SELECT * FROM `languages` WHERE `language`='PHP' OR `language`='JavaScript';
 SELECT * FROM `languages` WHERE `id`='3' OR `id`='5' OR `id`='7';
 SELECT * FROM `languages` WHERE `language`='JavaScript' LIMIT 2 OFFSET 0;
 SELECT * FROM `languages` WHERE `language`!='PHP';
+SELECT * FROM `languages` ORDER BY `language`;
+SELECT * FROM `languages` WHERE `version` LIKE '2.%';
+SELECT * FROM `languages` WHERE `id`='1' || `id`='3';
+
+
 
