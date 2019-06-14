@@ -39,4 +39,10 @@ INSERT INTO `frameworks`(`framework`,`version`)VALUES('Symfony','2.8');
 INSERT INTO `frameworks`(`framework`,`version`)VALUES('Symfony','3');
 INSERT INTO `frameworks`(`framework`,`version`)VALUES('Jquery','1.6');
 INSERT INTO `frameworks`(`framework`,`version`)VALUES('Jquery','2.10');
+SELECT * FROM `languages`;
+SELECT * FROM `languages` WHERE `language`='PHP';
+SELECT * FROM `languages` WHERE `language`='PHP' OR `language`='JavaScript';
+SELECT * FROM `languages` WHERE `id`='3' OR `id`='5' OR `id`='7';
+SELECT * FROM `languages` WHERE `language`='JavaScript' LIMIT 2 OFFSET 0;
+SELECT * FROM `languages` WHERE `language`!='PHP';
 
